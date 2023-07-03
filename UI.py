@@ -46,15 +46,20 @@ def reply_message(msg):
     label = tk.Label(frame, anchor=tk.E if alignment == tk.E else tk.W, bg=bg_color, wraplength=600)
     label.pack(side=tk.RIGHT if alignment == tk.E else tk.LEFT, padx=10, pady=5)
 
+    if msg == "Muchas gracias, nos vemos!" or msg == "Excelente, hemos encontrado un trabajo que se adjusta a tus preferencias. Muchas gracias" \
+                         " por participar de este proceso junto a Chaty. Nos vemos":
+        cerrar_ventana()
+        return
     message_frames.append(frame)
 
     button.config(state=tk.DISABLED)
     entry.config(state=tk.DISABLED)
 
+
     for i, char in enumerate(msg):
         label.config(text=msg[:i+1])  # Update the label with each letter
         root.update()  # Update the GUI
-        time.sleep(0.05)  # Add a delay to control the speed of printing
+        time.sleep(0.02)  # Add a delay to control the speed of printing
 
     button.config(state=tk.NORMAL)
     entry.config(state=tk.NORMAL)
@@ -76,8 +81,17 @@ def center_window(window, width_ratio, height_ratio):
     window.geometry(f"{desired_width}x{desired_height}+{offset_x}+{offset_y}")
     return desired_width, desired_height
 
+def cerrar_ventana():
+    msg = "Gracias por utilizar Chaty! Espero haberte ayudado. Nos vemos la proxima!"
+    reply_message(msg)
+    msg = "Cerrando la aplicacion en 3... 2... 1..."
+    reply_message(msg)
+    time.sleep(2)
+    root.destroy()
+
 root = tk.Tk()
-root.title("Chatbox v4")
+root.title("Chaty v4")
+root.protocol("WM_DELETE_WINDOW", cerrar_ventana)
 
 
 # Center the window and set its size to occupy 3/4 of the screen
@@ -105,7 +119,7 @@ canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
 initial_frame = tk.Frame(scrollable_frame, bg="lightblue")
 initial_frame.grid(row=0, column=0, sticky=tk.W, padx=10, pady=5)
 
-initial_label = tk.Label(initial_frame, text="Hola, en que puedo ayudarte? Soy ChatBox, tu asistente inteligente. Comencemos con las preguntas. Dime que quieres saber y respondo.", anchor=tk.W, bg="lightblue", font=font)
+initial_label = tk.Label(initial_frame, text="Hola, en que puedo ayudarte? Soy Chaty, tu asistente inteligente. Comencemos con las preguntas. Dime que quieres saber y te respondo.", anchor=tk.W, bg="lightblue", font=font)
 initial_label.pack(side=tk.LEFT, padx=10, pady=5)
 
 message_frames = [initial_frame]

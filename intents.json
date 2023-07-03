@@ -20,7 +20,7 @@
 		},
 		{
 			"tag": "servicio-jornada-completa",
-			"patterns": ["I'm looking for a new job full time", "I'm looking for a new job working 8 hours", "I'm looking for a new job working eight hours", "I am looking to work 8 hours", "I am looking to work eight hours", "I have the intention of starting my profesional career, and work 8 hours", "grow as a profesional, in a full time job", "all day", "full jornal"],
+			"patterns": ["I'm looking for a new job full time", "I'm looking for a new job working 8 hours", "I'm looking for a new job working eight hours", "I am looking to work 8 hours", "I am looking to work eight hours", "I have the intention of starting my profesional career, and work 8 hours", "grow as a profesional, in a full time job", "all day"],
 			"responses": ["Genial, entonces buscas un trabajo de jornada completa, donde la cantidad de horas a trabajar es 8.", "Entiendo, tendre en cuenta que buscas trabajo full-time, o de 8 horas diarias."],
 			"context_set": ""	
 		},
@@ -70,6 +70,24 @@
 			"tag": "Sys-Admin",
 			"patterns": ["Server Management", "Knowledge of networks and security", "Task automation", "Backup and disaster recovery management", "Performance monitoring and optimization"],
 			"responses": ["Muchas gracias por compartir tus conocimientos. Veo que tus habilidades se ajustan al rol de SysAdmin.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia. Veo que tus habilidades se ajustan al rol de SysAdmin."],
+			"context_set": ""
+		},
+		{
+			"tag": "Team-Leader",
+			"patterns": ["Operational management of work team", "Kanban", "Scrum", "XP", "Cascada"],
+			"responses": ["Muchas gracias por compartir tus conocimientos. Veo que tus habilidades se ajustan al rol de Team Leader.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia. Veo que tus habilidades se ajustan al rol de Team Leader."],
+			"context_set": ""
+		},
+		{
+			"tag": "SEM",
+			"patterns": ["Ability to set goals", "Problem resolution", "Medium term planning", "Team coordination"],
+			"responses": ["Muchas gracias por compartir tus conocimientos. Veo que tus habilidades se ajustan al rol de Software Engineer Manager.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia. Veo que tus habilidades se ajustan al rol de Software Engineer Manager."],
+			"context_set": ""
+		},
+		{
+			"tag": "CTO",
+			"patterns": ["Strategic vision", "executive leadership", "Knowledge in multiple areas", "Evaluation of new technologies", "Ability to collaborate with other departments"],
+			"responses": ["Muchas gracias por compartir tus conocimientos. Veo que tus habilidades se ajustan al rol de CTO.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia. Veo que tus habilidades se ajustan al rol de CTO."],
 			"context_set": ""
 		},
 		{

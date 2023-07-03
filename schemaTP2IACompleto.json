@@ -1,0 +1,7 @@
+[{"job":"cto","hours":4,"modality":"hibrida","location":"berlin","holidays":"26 days","expected_salary":"204135"},
+{"job":"fullstack","hours":4,"modality":"presencial","location":"hong kong","holidays":"13 days","expected_salary":"567828"},
+{"job":"frontend","hours":4,"modality":"hibrida","location":"milan","holidays":"25 days","expected_salary":"573811"},
+{"job":"sysadmin","hours":8,"modality":"presencial","location":"cordoba","holidays":"21 days","expected_salary":"169915"},
+{"job":"ithelpdesk","hours":8,"modality":"hibrida","location":"londres","holidays":"4 weeks","expected_salary":"570762"},
+{"job":"sem","hours":4,"modality":"presencial","location":"paris","holidays":"25 days","expected_salary":"570407"},
+{"job":"backend","hours":8,"modality":"hibrida","location":"parana","holidays":"1 weeks","expected_salary":"595942"}]
