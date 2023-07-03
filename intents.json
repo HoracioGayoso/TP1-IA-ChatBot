@@ -1,0 +1,88 @@
+{
+	"intents": [
+		{
+			"tag": "saludos",
+			"patterns": ["hello", "hello, how are you?", "good morning", "hi", "what's up?", "good afternoon", "good night", "hey"],
+			"responses":["Hola, en que puedo ayudarte? Soy Chaty, tu agente de RRHH inteligente. Comencemos con las preguntas.", "Hola, soy Chaty, tu agente virtual de recursos humanos. En que te puedo ayudar?"],
+			"context_set": ""
+		},
+		{
+			"tag": "servicio",
+			"patterns": ["I'm looking for a new job in", "I need a new job", "I am looking to work", "serching for a new work", "looking to change job", "looking to change work", "Looking to improve as a profesional", "grow as a profesional", "I have the intention of starting my profesional career", "I am looking for a job", "I'm looking for work"],
+			"responses": ["Veo que buscas un nuevo trabajo.", "Genial te buscaremos un nuevo trabajo.", "Bien, comenzaremos la busqueda de tu nuevo trabajo."],
+			"context_set": ""
+		},
+		{
+			"tag": "servicio-media-jornada",
+			"patterns": ["I'm looking for a new job part time", "I'm looking for a new job working 4 hours", "I'm looking for a new job working four hours", "I am looking to work 4 hours", "I am looking to work four hours", "i want to start in a new work, and work mid day", "i want to start in a new work, and work only in the morning", "mid day", "mid jornal"],
+			"responses": ["Genial, entonces buscas un trabajo de media jornada, donde la cantidad de horas a trabajar es 4.", "Entiendo, tendra en cuenta que buscas trabajo part-time, o de 4 horas diarias."],
+			"context_set": ""	
+		},
+		{
+			"tag": "servicio-jornada-completa",
+			"patterns": ["I'm looking for a new job full time", "I'm looking for a new job working 8 hours", "I'm looking for a new job working eight hours", "I am looking to work 8 hours", "I am looking to work eight hours", "I have the intention of starting my profesional career, and work 8 hours", "grow as a profesional, in a full time job", "all day", "full jornal"],
+			"responses": ["Genial, entonces buscas un trabajo de jornada completa, donde la cantidad de horas a trabajar es 8.", "Entiendo, tendre en cuenta que buscas trabajo full-time, o de 8 horas diarias."],
+			"context_set": ""	
+		},
+		{
+			"tag": "modalidad-remoto",
+			"patterns": ["remote", "working from home", "Exclusive from home", "only from home", "at my house", "At home", "Home", "house", "I'm looking for a new job remote", "i want to start in a new work, remote"],
+			"responses": ["Genial, entonces buscas trabajar desde casa exlusivamente", "Entiendo, tendre en cuenta que buscas trabajo full remoto"],
+			"context_set": ""	
+		},
+		{
+			"tag": "modalidad-presencial",
+			"patterns": ["office", "face-to-face" ,"working from office", "Presencial", "only from office", "See my coworkers", "See my teammates", "See my colleagues", "office", "I'm looking for a new job face-to-face", "i want to start in a new work, face-to-face", "I'm looking for a new job and go to the office"],
+			"responses": ["Genial, entonces buscas trabajar de manera presencial", "Entiendo, tendre en cuenta que buscas trabajo presencial"],
+			"context_set": ""	
+		},
+		{
+			"tag": "modalidad-hibrida",
+			"patterns": ["Both", "Hybrid", "Possible to choose", "both choises", "I'm looking for a new job that offers both options", "I'm looking for a new hybrid job", "I'm looking for a new hybrid work", "i want to start in a new hybrid work"],
+			"responses": ["Genial, entonces buscas trabajar de manera hibrida", "Entiendo, tendre en cuenta que buscas trabajo que brinde ambas posibilidades"],
+			"context_set": ""	
+		},
+		{
+			"tag": "afirmacion",
+			"patterns": ["Yes", "Sure", "Ok", "okey", "Right", "Of course", "Absolutely", "positive", "it might be ok", "Yeah"],
+			"responses": ["Veo que tu respuesta fue afirmativa.", "Entiendo que tu respuesta fue afirmativa."],
+			"context_set": ""
+		},
+		{
+			"tag": "negacion",
+			"patterns": ["No", "No way", "negative", "disagree", "Not okay", "not Right", "not"],
+			"responses": ["Veo que tu respuesta fue negativa.", "Entiendo que tu respuesta fue negativa."],
+			"context_set": ""
+		},
+		{
+			"tag": "tecnologias",
+			"patterns": ["C", "C++", "C#", "php", "node", "python", "ruby", "swift", "java", "html", "css", "javascript", "React", "angular", "typescript", "Scrum", "Kanban", "SQL", "Mongo", "SQL Server", "MySQL", "My SQL", "Postgre SQL", "Apache Cassandra", "CouchDB"],
+			"responses": ["Muchas gracias por compartir tus conocimientos.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia."],
+			"context_set": ""
+		},
+		{
+			"tag": "IT-Helpdesk",
+			"patterns": ["Customer Support", "verbal and written communication", "remote support tools", "Hardware Troubleshooting", "Basic knowledge of software"],
+			"responses": ["Muchas gracias por compartir tus conocimientos. Veo que tus habilidades se ajustan al rol de IT-Helpdesk.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia. Veo que tus habilidades se ajustan al rol de IT-Helpdesk."],
+			"context_set": ""
+		},
+		{
+			"tag": "Sys-Admin",
+			"patterns": ["Server Management", "Knowledge of networks and security", "Task automation", "Backup and disaster recovery management", "Performance monitoring and optimization"],
+			"responses": ["Muchas gracias por compartir tus conocimientos. Veo que tus habilidades se ajustan al rol de SysAdmin.", "Agradezco que hayas compartido en que tecnologias/habilidades tienes conocimientos/experiencia. Veo que tus habilidades se ajustan al rol de SysAdmin."],
+			"context_set": ""
+		},
+		{
+			"tag": "vacaciones",
+			"patterns": ["weeks", "week", "days", "I would like to have weeks of vacation", "I would like to have days of vacation", "day", "i want to have days of holidays", "i want to have weeks of holidays", "I don't want vacations", "I don't want any vacations", "I don't want holidays"],
+			"responses": ["Muchas gracias por contestar con tu preferencia respecto al topico Vacaciones.", "Te agradezco por constestar tus preferencias vacacionales."],
+			"context_set": ""
+		},
+		{
+			"tag": "salario",
+			"patterns": ["salary", "I would like my salary to be a month", "It seems right to me to receive a month for my work", "i imagine it like a month", "dollars per month", "dollars", "I would like to collect", "dollars seems adequate to me"],
+			"responses": ["Muchas gracias por contestar con tu preferencia respecto al topico Salario.", "Te agradezco por constestar tus preferencias salariales."],
+			"context_set": ""
+		}
+	]
+}

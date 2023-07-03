@@ -3,7 +3,7 @@ from tkinter import ttk
 import tkinter.font as tkFont
 import math
 import time
-import qya
+import training
 
 def add_message():
     button.config(state=tk.NORMAL)
@@ -34,7 +34,7 @@ def add_message():
     scrollable_frame.update_idletasks()
     canvas.configure(scrollregion=canvas.bbox("all"))
     canvas.yview_moveto(1.0)
-    reply = qya.reply(message)
+    reply = training.reply(message)
     reply_message(reply)
 
 def reply_message(msg):
